@@ -1,0 +1,14 @@
+mybatis-plus:
+  mapper-locations: classpath:mapping/xml/*.xml
+  type-aliases-package: com.example.demo
+  global-config:
+    logic-delete-value: 0
+    logic-not-delete-value: 1
+    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+
+server:
+  port: 9527
+logging:
+  level:
+    root: info
+  config: classpath:logback.xml
